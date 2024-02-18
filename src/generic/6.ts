@@ -7,17 +7,17 @@
 //   Виправте тип у аргументі функції так, щоб не було помилок типу.
 // */
 
-// type User = {
-//   name: string;
-//   surname: string;
-//   email: string;
-//   password: string;
-// }
+type User = {
+  name: string;
+  surname: string;
+  email: string;
+  password: string;
+};
 
-// function createOrUpdateUser(initialValues: User) {
-//   // Оновлення користувача
-// }
+function createOrUpdateUser(initialValues: Partial<User>) {
+  // Оновлення користувача
+}
 
-// createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
+createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
 
-// export {};
+export {};
